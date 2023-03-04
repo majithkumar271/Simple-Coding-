@@ -1,0 +1,16 @@
+def find_smallest_number(list):
+    # Initialize the smallest number with the first element of the list
+    smallest = list[0]
+    
+    # Loop through the list and compare each element with the smallest number
+    for num in list:
+        if num < smallest:
+            smallest = num
+    
+    # Return the smallest number
+    return smallest
+
+# Example usage
+list1 = [5, 7, 9, 14, 10, 20, 4]
+smallest_num = find_smallest_number(list1)
+print("The smallest number in the list is:", smallest_num)
