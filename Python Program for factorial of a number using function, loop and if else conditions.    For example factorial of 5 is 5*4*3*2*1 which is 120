@@ -1,0 +1,17 @@
+def factorial(num):
+    # Define a variable to store the factorial
+    fact = 1
+    
+    # Check if the number is 0 or 1
+    if num == 0 or num == 1:
+        return 1
+    else:
+        # Loop through the range from 1 to num
+        for i in range(1, num + 1):
+            fact = fact * i
+        return fact
+
+# Example usage
+input_num = 5
+result = factorial(input_num)
+print("The factorial of", input_num, "is", result)
